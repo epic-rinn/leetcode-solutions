@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /**
  * Idea:
  * - Instead of using a nested loop (O(n²)), we use a hash map to achieve O(n).
@@ -33,9 +31,4 @@ func twoSum(nums []int, target int) []int {
 
 	// In the case of not matching pair
 	return []int{-1, -1}
-}
-
-func main() {
-	nums := []int{2, 7, 11, 15}
-	fmt.Print(twoSum(nums, 9))
 }
