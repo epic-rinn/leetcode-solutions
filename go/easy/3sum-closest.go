@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 	"sort"
 )
@@ -68,8 +67,4 @@ func threeSumClosest(nums []int, target int) int {
 	}
 
 	return ans
-}
-
-func main() {
-	fmt.Print(threeSumClosest([]int{-1, 2, 1, -4}, 1))
 }
