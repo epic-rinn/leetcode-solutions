@@ -1,4 +1,25 @@
 /**
+ * Idea:
+ * - Use a dummy node to simplify merging and avoid edge-case handling.
+ * - Compare the heads of both lists and always attach the smaller node.
+ * - Move the pointer forward in the list from which the node was taken.
+ * - Continue until one list ends, then attach the remaining list.
+ * - Final merged list starts at dummy.next.
+ *
+ * Algorithm:
+ * 1. Create a dummy node and a `current` pointer.
+ * 2. While both lists exist:
+ *      • Attach the smaller node to current.next.
+ *      • Advance pointer in that list.
+ *      • Move current forward.
+ * 3. After loop, link the remaining non-empty list.
+ * 4. Return dummy.next.
+ *
+ * Time:  O(n + m)
+ * Space: O(1)   (reuses existing nodes; only one dummy node created)
+ */
+
+/**
  * Definition for singly-linked list.
  */
 
